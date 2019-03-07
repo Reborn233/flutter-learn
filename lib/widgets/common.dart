@@ -18,3 +18,20 @@ class H1 extends StatelessWidget {
     );
   }
 }
+
+class Layout extends StatelessWidget {
+  Layout({this.children});
+
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ListView(
+        padding: EdgeInsets.all(15.0),
+        shrinkWrap: false,
+        children: children,
+      ),
+    );
+  }
+}
